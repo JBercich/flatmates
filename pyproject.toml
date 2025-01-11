@@ -1,10 +1,14 @@
 [project]
 name = "housesearch"
 version = "0.1.0"
-description = "Add your description here"
+description = "House search data pipelines."
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "bs4>=0.0.2",
+    "pandas>=2.2.3",
+]
 
 [project.scripts]
 flatmates-open = "housesearch.flatmates.open:open"
+flatmates-process = "housesearch.flatmates.process:process"
